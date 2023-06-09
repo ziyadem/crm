@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import "react-toastify/dist/ReactToastify.css";
 
 //axios
-axios.defaults.baseURL = "http://localhost:3000";
+axios.defaults.baseURL = "https://crm-backend-vgri.onrender.com";
 axios.defaults.headers.common["Content-Type"] = "application/json";
 let tokenId = localStorage.getItem("token");
 if (tokenId) axios.defaults.headers.common["token"] = tokenId;
